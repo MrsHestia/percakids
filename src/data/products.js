@@ -1,11 +1,11 @@
 export const products = [
   {
     id: 1,
-    name: 'Dress Perca Floral',
-    price: 85000,
+    name: 'T-shirt Anak Flora',
+    price: 35000,
     size: '2-5 tahun',
     category: 'perempuan',
-    emoji: '👗',
+    emoji: '',
     badge: 'Terlaris',
     description: 'Dress cantik dari kain perca floral pilihan, nyaman dipakai dan motif unik.',
     stock: 10,
