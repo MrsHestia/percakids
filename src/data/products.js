@@ -13,7 +13,7 @@ export const products = [
   {
     id: 2,
     name: 'Dress Anak',
-    price: 95000,
+    price: 35000,
     size: '1-4 tahun',
     category: 'unisex',
     badge: '',
@@ -24,7 +24,7 @@ export const products = [
   {
     id: 3,
     name: 'Dress anak (2)',
-    price: 75000,
+    price: 35000,
     size: '3-6 tahun',
     category: 'perempuan',
     badge: 'New',
@@ -35,7 +35,7 @@ export const products = [
   {
     id: 4,
     name: 'Dress anak (3)',
-    price: 65000,
+    price: 35000,
     size: '2-6 tahun',
     category: 'perempuan',
     badge: '',
@@ -46,7 +46,7 @@ export const products = [
   {
     id: 5,
     name: 'Moana Dress',
-    price: 110000,
+    price: 35000,
     size: '2-5 tahun',
     category: 'perempuan',
     badge: 'Best Seller',
@@ -57,7 +57,7 @@ export const products = [
   {
     id: 6,
     name: 'Ocean Blue Dress',
-    price: 90000,
+    price: 35000,
     size: '1-4 tahun',
     category: 'unisex',
     badge: 'New',
@@ -68,7 +68,7 @@ export const products = [
   {
     id: 7,
     name: 'Pakaian anak',
-    price: 70000,
+    price: 35000,
     size: '2-6 tahun',
     category: 'perempuan',
     badge: '',
@@ -79,7 +79,7 @@ export const products = [
   {
     id: 8,
     name: 'Pakaian anak (2)',
-    price: 55000,
+    price: 35000,
     size: '1-5 tahun',
     category: 'unisex',
     badge: '',
