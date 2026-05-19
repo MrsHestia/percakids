@@ -6,44 +6,8 @@ function formatRp(n) {
   return 'Rp ' + n.toLocaleString('id-ID');
 }
 
-function ImageSlider({ images, name }) {
-  const [current, setCurrent] = useState(0);
-  return (
-    <div className="relative w-full h-full">
-      <img
-        src={images[current]}
-        alt={name}
-        className="w-full h-full object-cover"
-      />
-      <div className="absolute bottom-2 left-0 right-0 flex justify-center gap-2 z-10">
-        {images.map((_, i) => (
-          <button
-            key={i}
-            onClick={() => setCurrent(i)}
-            className={`w-2 h-2 rounded-full transition-all ${
-              i === current ? 'bg-white scale-125' : 'bg-white/50'
-            }`}
-          />
-        ))}
-      </div>
-      <button
-        onClick={() => setCurrent((current - 1 + images.length) % images.length)}
-        className="absolute left-1 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white rounded-full w-7 h-7 text-sm font-bold flex items-center justify-center z-10 transition-all"
-      >
-        ‹
-      </button>
-      <button
-        onClick={() => setCurrent((current + 1) % images.length)}
-        className="absolute right-1 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white rounded-full w-7 h-7 text-sm font-bold flex items-center justify-center z-10 transition-all"
-      >
-        ›
-      </button>
-    </div>
-  );
-}
-
 export default function ProductCard({ product }) {
-  const { addItem } = useCart();
+  const { addItem, setIsOpen } = useCart();
   const [added, setAdded] = useState(false);
 
   const handleAdd = () => {
@@ -53,21 +17,17 @@ export default function ProductCard({ product }) {
   };
 
   return (
-    <div className="product-card bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+    <div className="product-card bg-white rounded-2xl border border-gray-100 overflow-hidden">
       {/* Image area */}
-      <div className="relative w-full aspect-square bg-[#E8EDFF] overflow-hidden">
-        {product.images ? (
-          <ImageSlider images={product.images} name={product.name} />
-        ) : product.image ? (
+      <div className="relative w-full aspect-square bg-[#E8EDFF] flex items-center justify-center overflow-hidden">
+        {product.image ? (
           <img
             src={product.image}
             alt={product.name}
             className="w-full h-full object-cover"
           />
         ) : (
-          <div className="w-full h-full flex items-center justify-center">
-            <span className="text-7xl">{product.emoji}</span>
-          </div>
+          <span className="text-7xl">{product.emoji}</span>
         )}
         {product.badge && (
           <span className="absolute top-2 left-2 bg-[#F72585] text-white text-xs font-bold px-3 py-1 rounded-full z-10">
