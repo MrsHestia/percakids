@@ -8,7 +8,7 @@ export const products = [
     badge: 'Terlaris',
     description: 'Baju anak batik yang cantik dan nyaman dipakai untuk berbagai acara.',
     stock: 10,
-    image: '/images/products/Baju anak batik.jpeg',
+    image: '/percakids/Baju anak batik.jpeg',
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ export const products = [
     badge: '',
     description: 'Dress anak yang elegan dan cocok untuk berbagai acara.',
     stock: 8,
-    image: '/images/products/Dress Anak.jpeg',
+    image: 'percakids/Dress Anak.jpeg',
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ export const products = [
     badge: 'New',
     description: 'Dress anak dengan desain yang lucu dan warna-warna cerah.',
     stock: 12,
-    image: '/images/products/Dress anak (2).jpeg',
+    image: '/percakids/Dress anak (2).jpeg',
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ export const products = [
     badge: '',
     description: 'Dress anak pilihan dengan kualitas terbaik dan nyaman dipakai.',
     stock: 15,
-    image: '/images/products/Dress anak (3).jpeg',
+    image: '/percakids/Dress anak (3).jpeg',
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ export const products = [
     badge: 'Best Seller',
     description: 'Dress anak dengan tema Moana yang disukai anak-anak.',
     stock: 6,
-    image: '/images/products/Moana Dress.jpeg',
+    image: '/percakids/Moana Dress.jpeg',
   },
   {
     id: 6,
@@ -63,7 +63,7 @@ export const products = [
     badge: 'New',
     description: 'Dress anak dengan warna biru laut yang segar dan nyaman.',
     stock: 9,
-    image: '/images/products/Ocean Blue Dress.jpeg',
+    image: '/percakids/Ocean Blue Dress.jpeg',
   },
   {
     id: 7,
@@ -74,7 +74,7 @@ export const products = [
     badge: '',
     description: 'Pakaian anak yang casual dan nyaman untuk penggunaan sehari-hari.',
     stock: 11,
-    image: '/images/products/Pakaian anak.jpeg',
+    image: '/percakids/Pakaian anak.jpeg',
   },
   {
     id: 8,
@@ -85,6 +85,6 @@ export const products = [
     badge: '',
     description: 'Pakaian anak dengan pilihan warna yang beragam dan trendy.',
     stock: 20,
-    image: '/images/products/Pakaian anak (2).jpeg',
+    image: '/percakids/Pakaian anak (2).jpeg',
   },
 ];
