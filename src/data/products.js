@@ -1,7 +1,7 @@
 export const products = [
   {
     id: 1,
-    name: 'Baju anak batik',
+    name: 'Baju Anak Batik',
     price: 35000,
     size: '2-5 tahun',
     category: 'perempuan',
@@ -67,13 +67,24 @@ export const products = [
   },
   {
     id: 7,
-    name: 'Pakaian Anak Bawahan',
+    name: 'Pakaian Anak',
     price: 35000,
     size: '2-6 tahun',
     category: 'perempuan',
     badge: '',
     description: 'Pakaian anak yang casual dan nyaman untuk penggunaan sehari-hari.',
     stock: 11,
+    image: '/pakaian-anak.jpeg',
+  },
+  {
+    id: 8,
+    name: 'Pakaian Anak Bawahan',
+    price: 35000,
+    size: '1-5 tahun',
+    category: 'unisex',
+    badge: '',
+    description: 'Pakaian anak dengan pilihan warna yang beragam dan trendy.',
+    stock: 20,
     image: '/pakaian-anak-bawahan.jpeg',
   },
 ];
